@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <title>Keyboard</title>
+<!-- Styling på alla keys -->
+    <style>
+
+    *{
+      padding: 0;
+    }
+
+      .button1{
+        border: 1px solid;
+        width: 67px;
+        height: 45px;
+        float: left;
+        margin: 5px;
+        background-color: black;
+        box-shadow: 1px 1px 6px 1px blue;
+      }
+
+      .button{
+        border: 1px solid;
+        width: 75px;
+        height: 75px;
+        float: left;
+        margin: 5px;
+        background-color: black;
+        box-shadow: 1px 1px 6px 1px blue;
+
+      }
+
+      p{
+        text-align: center;
+        color: white;
+      }
+
+      .delete{
+        border: 1px solid;
+        width: 120px;
+        height: 75px;
+        float: left;
+        margin: 5px;
+        background-color: black;
+        box-shadow: 1px 1px 6px 1px blue;
+      }
+
+      .enter{
+        border: 1px solid;
+        width: 75px;
+        height: 163px;
+        float: right;
+        margin: 5px;
+        background-color: black;
+        box-shadow: 1px 1px 6px 1px blue;
+      }
+
+      .Caps{
+        border: 1px solid;
+        width: 121px;
+        height: 75px;
+        float: left;
+        margin: 5px;
+        background-color: black;
+        box-shadow: 1px 1px 6px 1px blue;
+      }
+
+      .tab{
+        border: 1px solid;
+        width: 110px;
+        height: 75px;
+        float: left;
+        margin: 5px;
+        background-color: black;
+        box-shadow: 1px 1px 6px 1px blue;
+      }
+
+      .rightShift{
+        border: 1px solid;
+        width: 205px;
+        height: 74px;
+        float: left;
+        margin: 5px;
+        background-color: black;
+        box-shadow: 1px 1px 6px 1px blue;
+      }
+
+      .space{
+        border: 1px solid;
+        width: 465px;
+        height: 75px;
+        float: left;
+        margin: 5px;
+        background-color: black;
+        box-shadow: 1px 1px 6px 1px blue;
+      }
+
+      .arrow{
+        border: 1px solid;
+        width: 75px;
+        height: 37.5px;
+        float: left;
+        margin: 5px;
+        background-color: black;
+        box-shadow: 1px 1px 6px 1px blue;
+      }
+
+      .arrow1{
+        border: 1px solid;
+        width: 75px;
+        height: 30px;
+        float: left;
+        margin: 5px;
+        margin-top: 50px;
+        margin-left: -82px;
+        text-align: center;
+        background-color: black;
+        box-shadow: 1px 1px 6px 1px blue;
+      }
+
+      .board{
+        border: 1px solid;
+        width: 1264px;
+        height: 495px;
+        background-color: #323232;
+        box-shadow: 1px 1px 15px 1px black;
+      }
+    </style>
+
+    <script>
+//Funktion för färg ändring när man trycker på knapparna
+    document.onkeydown = function(e)
+      {
+        document.getElementById(e.code).style.backgroundColor = "red";
+        document.getElementById(e.code).style.color = "red";
+      }
+//Ändrar tillbaka till standard färg när man släpper tangenten
+      document.onkeyup = function(e)
+      {
+        document.getElementById(e.code).style.backgroundColor = "Black";
+        document.getElementById(e.code).style.color = "black";
+      }
+
+    </script>
+  </head>
+  <body>
+<!-- Div's för alla knappar på tangent bordet -->
+<div class="board">
+
+    <!-- Row 1 -->
+    <div class="button1" id="Escape">
+      <p>Esc</p>
+    </div>
+    <div class="button1" id="AudioVolumeMute">
+      <p>F1</p>
+    </div>
+    <div class="button1" id="AudioVolumeDown">
+      <p>F2</p>
+    </div>
+    <div class="button1" id="F4">
+      <p>F3</p>
+    </div>
+    <div class="button1" id="NumLock">
+      <p>F4</p>
+    </div>
+    <div class="button1" id="ScrollLock">
+      <p>F5</p>
+    </div>
+    <div class="button1" id="F6">
+      <p>F6</p>
+    </div>
+    <div class="button1" id="F7">
+      <p>F7</p>
+    </div>
+    <div class="button1" id="F8">
+      <p>F8</p>
+    </div>
+    <div class="button1" id="F9">
+      <p>F9</p>
+    </div>
+    <div class="button1" id="F10">
+      <p>F10</p>
+    </div>
+    <div class="button1" id="F11">
+      <p>F11</p>
+    </div>
+    <div class="button1" id="F12">
+      <p>F12</p>
+    </div>
+    <div class="button1" id="14">
+      <p>PrtScr</p>
+    </div>
+    <div class="button1" id="Insert">
+      <p>Insert</p>
+    </div>
+    <div class="button1" id="Delete">
+      <p>Delete</p>
+    </div>
+
+
+    <!-- Row 2 -->
+    <div class="button" id="Backquote">
+      <p>§</p>
+    </div>
+    <div class="button" id="Digit1">
+      <p>1</p>
+    </div>
+    <div class="button" id="Digit2">
+      <p>2</p>
+    </div>
+    <div class="button" id="Digit3">
+      <p>3</p>
+    </div>
+    <div class="button" id="Digit4">
+      <p>4</p>
+    </div>
+    <div class="button" id="Digit5">
+      <p>5</p>
+    </div>
+    <div class="button" id="Digit6">
+      <p>6</p>
+    </div>
+    <div class="button" id="Digit7">
+      <p>7</p>
+    </div>
+    <div class="button" id="Digit8">
+      <p>8</p>
+    </div>
+    <div class="button" id="Digit9">
+      <p>9</p>
+    </div>
+    <div class="button" id="Digit0">
+      <p>0</p>
+    </div>
+    <div class="button" id="Minus">
+      <p>?</p>
+    </div>
+    <div class="button" id="Equal">
+      <p>´</p>
+    </div>
+    <div class="delete" id="Backspace">
+      <p>DEL</p>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="tab" id="Tab">
+      <p>Tab</p>
+    </div>
+    <div class="button" id="KeyQ">
+      <p>Q</p>
+    </div>
+    <div class="button" id="KeyW">
+      <p>W</p>
+    </div>
+    <div class="button" id="KeyE">
+      <p>E</p>
+    </div>
+    <div class="button" id="KeyR">
+      <p>R</p>
+    </div>
+    <div class="button" id="KeyT">
+      <p>T</p>
+    </div>
+    <div class="button" id="KeyY">
+      <p>Y</p>
+    </div>
+    <div class="button" id="KeyU">
+      <p>U</p>
+    </div>
+    <div class="button" id="KeyI">
+      <p>I</p>
+    </div>
+    <div class="button" id="KeyO">
+      <p>O</p>
+    </div>
+    <div class="button" id="KeyP">
+      <p>P</p>
+    </div>
+    <div class="button" id="BracketLeft">
+      <p>Å</p>
+    </div>
+    <div class="button" id="BracketRight">
+      <p>^</p>
+    </div>
+    <div class="enter" id="Enter">
+      <p>ENTER</p>
+    </div>
+
+    <!-- Row 4 -->
+    <div class="Caps" id="CapsLock">
+      <p>Caps Lock</p>
+    </div>
+    <div class="button" id="KeyA">
+      <p>A</p>
+    </div>
+    <div class="button" id="KeyS">
+      <p>S</p>
+    </div>
+    <div class="button" id="KeyD">
+      <p>D</p>
+    </div>
+    <div class="button" id="KeyF">
+      <p>F</p>
+    </div>
+    <div class="button" id="KeyG">
+      <p>G</p>
+    </div>
+    <div class="button" id="KeyH">
+      <p>H</p>
+    </div>
+    <div class="button" id="KeyJ">
+      <p>J</p>
+    </div>
+    <div class="button" id="KeyK">
+      <p>K</p>
+    </div>
+    <div class="button" id="KeyL">
+      <p>L</p>
+    </div>
+    <div class="button" id="Semicolon">
+      <p>Ö</p>
+    </div>
+    <div class="button" id="Quote">
+      <p>Ä</p>
+    </div>
+    <div class="button" id="Backslash">
+      <p>*</p>
+    </div>
+
+    <!-- Row 5 -->
+    <div class="button" id="ShiftLeft">
+      <p>Shift</p>
+    </div>
+    <div class="button" id="IntlBackslash">
+      <p><</p>
+    </div>
+    <div class="button" id="KeyZ">
+      <p>Z</p>
+    </div>
+    <div class="button" id="KeyX">
+      <p>X</p>
+    </div>
+    <div class="button" id="KeyC">
+      <p>C</p>
+    </div>
+    <div class="button" id="KeyV">
+      <p>V</p>
+    </div>
+    <div class="button" id="KeyB">
+      <p>B</p>
+    </div>
+    <div class="button" id="KeyN">
+      <p>N</p>
+    </div>
+    <div class="button" id="KeyM">
+      <p>M</p>
+    </div>
+    <div class="button" id="Comma">
+      <p>,</p>
+    </div>
+    <div class="button" id="Period">
+      <p>.</p>
+    </div>
+    <div class="button" id="Slash">
+      <p>-</p>
+    </div>
+    <div class="rightShift" id="ShiftRight">
+      <p>Right Shift</p>
+    </div>
+
+    <!-- Row 6 -->
+    <div class="button" id="ControlLeft">
+      <p>Ctrl</p>
+    </div>
+    <div class="button" id="72">
+      <p>Fn</p>
+    </div>
+    <div class="button" id="MetaLeft">
+      <p>Windows</p>
+    </div>
+    <div class="button" id="AltLeft">
+      <p>Alt</p>
+    </div>
+    <div class="space" id="Space">
+      <p>Space</p>
+    </div>
+    <div class="button" id="AltRight">
+      <p>AltGr</p>
+    </div>
+    <div class="button" id="ControlRight">
+      <p>Ctrl</p>
+    </div>
+    <div class="button" id="ArrowLeft">
+      <p>←</p>
+    </div>
+    <div class="arrow" id="ArrowUp">
+      <p>↑</p>
+    </div>
+    <div class="arrow1" id="ArrowDown">
+      <p>↓</p>
+    </div>
+    <div class="button" id="ArrowRight">
+      <p>→</p>
+    </div>
+
+</div>
+
+  </body>
+</html>
